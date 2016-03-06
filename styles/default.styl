@@ -1,0 +1,72 @@
+@import './_settings'
+@import './_material-color'
+
+normalize-css()
+base()
+typography()
+
+rocket-height = 16.634rem
+rocket-height = 26.913rem
+
+bg-color = #113B50
+bg-color-1 = #061D29
+bg-color-2 = #135779
+
+.hero
+	display flex
+	width 100vw
+	height 100vh
+	align-items center
+	justify-content center
+	background-color bg-color-1
+	// animation bg-fade 3s alternate infinite
+
+	h1
+		font-weight 100
+		text-transform uppercase
+		margin 0 2.5rem
+		font-size 6.354rem
+
+		span.blinken
+			color clr-red
+		span.rocket
+			color clr-white
+
+	svg
+		height rocket-height
+
+		#bulleye-shadow
+			mix-blend-mode multiply
+
+		#bulleye-inner
+			animation blink-eye 3s infinite
+
+
+@keyframes bg-fade
+	from
+		backgound-color bg-color-1
+
+	to
+		background-color bg-color-2
+
+blink-off = clr-blue-grey-800
+blink-on = clr-red-a700
+
+blink-frame(at)
+	{at - 5}
+		fill blink-off
+	{at}
+		fill blink-on
+	{at + 5}
+		fill blink-off
+
+@keyframes blink-eye
+	0%
+		fill blink-off
+	blink-frame(30%)
+	blink-frame(40%)
+	blink-frame(60%)
+	blink-frame(68%)
+	blink-frame(75%)
+	100%
+		fill blink-off

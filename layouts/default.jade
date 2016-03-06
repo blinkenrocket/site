@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+	head
+
+		// Meta
+		meta(charset="utf-8")
+		meta(http-equiv="content-type", content="text/html; charset=utf-8")
+
+		//-
+			Use the .htaccess and remove these lines to avoid edge case issues.
+			More info: h5bp.com/i/378
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+
+		//- Our site title and description
+		//- meta(name="author", content=site.author || '')
+		block meta
+			title blinkenrocket
+
+		//- Mobile viewport optimized: h5bp.com/viewport
+		meta(name="viewport", content="width=device-width")
+
+		// Icons
+		link(rel="shortcut icon", href="/favicon.ico")
+		//- link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/ico/apple-touch-icon-144-precomposed.png")
+		//- link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/ico/apple-touch-icon-114-precomposed.png")
+		//- link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/ico/apple-touch-icon-72-precomposed.png")
+		//- link(rel="apple-touch-icon-precomposed", href="/ico/apple-touch-icon-57-precomposed.png")
+		
+		link(rel="stylesheet", href='http://fonts.googleapis.com/css?family=Rajdhani|Quicksand')
+		link(rel="stylesheet", href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,400italic,100italic,300italic,700italic,500italic,900italic')
+		// Styles
+		//- link(href='/vendor/css/bootstrap.min.css', rel='stylesheet')
+		block styles
+			link(href='/css/vendor.css', rel='stylesheet')
+			link(href='/css/default.css', rel='stylesheet')
+	
+	body
+		block nav
+						
+		section#content.content
+			block content
+
+		//- block footer
+		//- 	footer
+		//- 		<!--[if lt IE 9]><div id="footer"><![endif]-->
+		//- 		p
+		//- 			| &copy; blinkenrocketundso ·&nbsp;
+		//- 			a(href='/datenschutz') Datenschutzerklärung
+		//- 			| &nbsp;·&nbsp;
+		//- 			a(href='/impressum') Impressum
+		//- 		<!--[if lt IE 9]></div><![endif]-->
+
+
+		block scripts
