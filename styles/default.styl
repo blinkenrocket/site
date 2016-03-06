@@ -39,7 +39,7 @@ bg-color-2 = #135779
 			mix-blend-mode multiply
 
 		#bulleye-inner
-			animation blink-eye 3s infinite
+			animation blink-eye 4s infinite
 
 
 @keyframes bg-fade
@@ -50,11 +50,13 @@ bg-color-2 = #135779
 		background-color bg-color-2
 
 blink-off = clr-blue-grey-800
-blink-on = clr-red-a700
+blink-on = clr-red
 
 blink-frame(at)
 	{at - 5}
 		fill blink-off
+	{at - 3}
+		fill blink-on
 	{at}
 		fill blink-on
 	{at + 5}
