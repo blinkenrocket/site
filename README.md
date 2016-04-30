@@ -6,3 +6,8 @@ Install:
 Run:
 
 > roots watch
+
+Publish
+
+> npm run build
+> npm run publish

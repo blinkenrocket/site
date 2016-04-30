@@ -7,5 +7,4 @@
 
 node_modules
 public
-
-contact-form/config.coffee
+.publish
