@@ -1,6 +1,7 @@
 Install:
 
 > npm -g install roots@
+
 > npm install
 
 Run:
@@ -10,4 +11,5 @@ Run:
 Publish
 
 > npm run build
+
 > npm run publish
