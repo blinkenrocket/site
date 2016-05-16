@@ -32,6 +32,7 @@ h2
 p
 	max-width 40rem
 	font-weight 300
+	font-size 1.236rem
 
 a
 	reset-link()
@@ -146,3 +147,33 @@ blink-frame(at)
 	blink-frame(75%)
 	100%
 		fill blink-off
+
++below('m')
+	.hero
+		flex-direction column
+		svg
+			height auto
+			width 70vw
+		h1
+			font-size 17.5vw
+			text-align center
+			line-height 20vw
+			margin 3rem 0 0 0
+
+		span
+			display block
+	h2
+		font-size 10vw
+		text-align center
+
+	.info, .contact
+		padding 3rem 1.5rem
+	p
+		font-size 1rem
+
+	.links
+		flex-direction column
+
+	.contact
+		a
+			font-size 8vw
