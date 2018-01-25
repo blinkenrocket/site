@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block menu %}
+<nav class="menu">
+    <a href="index.html">deutsch</a>
+</nav>
+{% endblock %}
+
+{% block body %}
+<div class="hero">
+    {{logo}}
+    <h1>
+        <span class="blinken">blinken</span>
+        <span class="rocket">rocket</span>
+    </h1>
+</div>
+<div class="info">
+    <h2>About Blinken&shy;Rocket</h2>
+    <p>Ze Blinkenrocket is a very good Rocket.</p>
+</div>
+
+<div class="links">
+    <a href="{{editor_link}}" class="odd"><div class="fa fa-wrench"></div>Editor</a>
+    <a href="{{manual_link}}" class="even"><div class="fa fa-book"></div>Manual</a>
+    <a href="{{tutorial_link}}" class="odd"><div class="fa fa-magic"></div>Tutorial</a>
+    <a href="{{shop_link}}" class="even"><div class="fa fa-money"></div>Buy</a>
+    <a href="sponsors.en.html" class="odd"><div class="fa fa-star"></div>Sponsors</a>
+</div>
+<div class="contact">
+    <a href="mailto:{{email}}"><div class="fa fa-envelope-o"></div>{{email}}</a>
+</div>
+
+<div class="legal-link">
+    <a href="legal.html">Legal Notice</a>
+</div>
+{% endblock %}

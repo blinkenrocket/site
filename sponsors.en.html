@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %} - Sponsors{% endblock %}
+
+{% block menu %}
+<nav class="menu">
+    <a href="index.en.html">home</a>
+</nav>
+{% endblock %}
+
+{% block body %}
+<div class="sponsors">
+    <h2>Sponsors</h2>
+    <p>Very important sponsors</p>
+</div>
+<div class="sponsor-list">
+    <div class="sponsor odd">
+        <img src="images/ccc.svg">
+        <a href="https://ccc.de">Chaos Computer Club</a>
+        <p>Nobody is ever going to read this text here, but it is very important
+        that it contains at least two sentences. Really.</p>
+    </div>
+    <div class="sponsor even">
+        <img src="images/metalab.svg">
+        <a href="https://metalab.at">metalab.at</a>
+        <p>Much more text is needed for a serious page.</p>
+    </div>
+</div>
+{% endblock %}

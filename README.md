@@ -1,15 +1,19 @@
-Install:
+# Blinkenrocket{.de,.com}
 
-> npm -g install roots@
+A simple website to present the blinkenrocket project and link to
+external resources.
 
-> npm install
+# Usage
 
-Run:
+On Debian or Ubuntu:
 
-> roots watch
+* `sudo apt install python3 python3-jinja python3-lesscpy`
 
-Publish
+On other systems:
 
-> npm run build
+* Install python3
+* `pip3 install lesscpy jinja2`
 
-> npm run publish
+And then, no matter on which system:
+
+`python build.py`

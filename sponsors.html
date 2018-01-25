@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %} - Sponsoren{% endblock %}
+
+{% block menu %}
+<nav class="menu">
+    <a href="index.html">home</a>
+</nav>
+{% endblock %}
+
+
+{% block body %}
+<div class="sponsors">
+    <h2>Sponsoren</h2>
+    <p>Die Blinkenrocket wäre ohne Unterstützung durch viele verschiedene Menschen nicht möglich. Ganz besonders wollen wir uns bei unseren Sponsoren bedanken!</p>
+</div>
+<div class="sponsor-list">
+    <div class="sponsor odd">
+        <img src="images/ccc.svg">
+        <a href="https://ccc.de">Chaos Computer Club</a>
+        <p>Sehr wichtig und gut.</p>
+    </div>
+    <div class="sponsor even">
+        <img src="images/metalab.svg">
+        <a href="https://metalab.at">metalab.at</a>
+        <p>Ein hackerspace.</p>
+    </div>
+</div>
+{% endblock %}
