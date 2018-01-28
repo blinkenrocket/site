@@ -17,7 +17,7 @@ def build_html_file(env, name, **args):
     print('writing %s....' % path)
     with open(path, 'w') as target:
         output = template.render(**args)
-        target.write(output)
+        target.write(output.encode('utf-8'))
 
 def build_html():
     env = jinja2.Environment(loader=jinja2.FileSystemLoader('.'))

@@ -7,12 +7,12 @@ external resources.
 
 On Debian or Ubuntu:
 
-* `sudo apt install python3 python3-jinja python3-lesscpy`
+* `sudo apt install python python-jinja python3-lesscpy`
 
 On other systems:
 
-* Install python3
-* `pip3 install lesscpy jinja2`
+* Install python2.7
+* `pip install lesscpy jinja2`
 
 And then, no matter on which system:
 
