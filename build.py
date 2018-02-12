@@ -31,7 +31,6 @@ def build_html():
     build_html_file(env, 'index.html')
     build_html_file(env, 'index.en.html')
     build_html_file(env, 'sponsors.html')
-    build_html_file(env, 'sponsors.en.html')
     build_html_file(env, 'legal.html')
 
 
