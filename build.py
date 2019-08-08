@@ -4,7 +4,7 @@ import lesscpy
 
 project_info = {
     'manual_link': 'https://github.com/blinkenrocket/documentation/raw/master/manual/manual.pdf',
-    'editor_link': 'webedit-react/',
+    'editor_link': 'https://editor.blinkenrocket.de/',
     'tutorial_link': 'http://www.instructables.com/id/BLINKENROCKET/',
     'shop_link': 'https://hackerspaceshop.com/products/blinkenrocket',
     'email': 'info@blinkenrocket.de',
